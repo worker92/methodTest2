@@ -1,0 +1,31 @@
+// dateMethod.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include "pch.h"
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+void printDate(int a, int b, int c) {
+	string month[12] = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+
+	cout << "The date is " << month[b-1] << " " << a << ", " << c << endl;
+	
+}
+int main()
+{
+	int day, month, year;
+
+   cout << "Enter day :\n";
+   cin >> day;
+   cout << "Enter month :\n";
+   cin >> month;
+   cout << "Enter year :\n";
+   cin >> year;
+
+   printDate(day, month, year);
+
+   return 0;
+}
+
